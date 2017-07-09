@@ -225,15 +225,16 @@ img .topbarlogo {
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #1E1E1E;
+    background-color: #3F464E;
     height: 50px;
     top: 0;
     width: 100%;
-}
 
+}
+.boxshadow {
+  box-shadow: 0px 5px 7px #AAA;
+}
 li {
     float: left;
 }
@@ -255,7 +256,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #5B5B5B;
+    background-color: #4F565E;
 }
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)

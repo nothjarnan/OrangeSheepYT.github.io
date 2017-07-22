@@ -52,3 +52,11 @@ li a {
 li a:hover {
     background-color: #5B5B5B;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 16px;
+}

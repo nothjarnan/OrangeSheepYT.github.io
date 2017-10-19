@@ -1,88 +1,45 @@
-/*
- * Animation module with all animation code
- */
-.anim-text-flow,
-.anim-text-flow-hover:hover {
-  /*
-   * Animation variables
-   */
-  $animationSteps: 20;
-  $animationDuration: 50;
-  $animationElement: span;
-  $animationElementsCount: 100;
-  $delayBetweenLetters: 0.2;
-
-  /*
-   * Elements settings
-   */
-  #{$animationElement} {
-    animation-name: anim-text-flow-keys;
-    animation-duration: #{$animationDuration}s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-  }
-
-  /*
-   * Keyframe loop
-   */
-  @keyframes anim-text-flow-keys {
-    @for $i from 0 through $animationSteps {
-      #{percentage($i * (1 / $animationSteps))} {
-        color: hsla(random(365), 60, 60, 1);
-      }
-    }
-  }
-
-  /*
-   * Element animation delay loop
-   */
-  $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
-
-  @for $i from 1 through $animationElementsCount {
-    #{$animationElement}:nth-of-type(#{$i}) {
-      animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
-    }
-  }
+h1,h2{
+  text-align:center;
+}
+h1{
+  color:rgba(100, 50, 255, .8);
+}
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 1s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 1s infinite; 
 }
 
-////////////////////////////
-// DEMO CODE 
-///////////////////////////
-body {
-  background-color: #1a1a1a;
-  color: #fefefe;
-  font-family: 'Ubuntu';
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 1.3em;
-  line-height: 2;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-  text-align: center;
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
 }
 
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
+/* Standar Syntax */
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
 }
-
-.txt {
-  display: block;
+body{
+  background-image: url(http://fjordstudio.dk/assets/img/bg/diamonds.png);
 }
-
-a { 
-  text-decoration: none;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  text-align: right;
-  color: #eee;
-  font-size: 15px;
-  line-height: 15px;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);

@@ -1,5 +1,6 @@
 /* Importing Open Sans font */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 
 body, html {
@@ -25,6 +26,9 @@ div {
   text-align: center;
 }
 
+p {
+  font-family: 'Ubuntu', regular;
+}
 ul {
     list-style-type: none;
     /* Making header larger for proper box shadow */

@@ -6,6 +6,7 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
+  color: #800000;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }

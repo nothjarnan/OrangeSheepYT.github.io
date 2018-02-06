@@ -45,6 +45,10 @@ li {
     float: left;
 }
 
+img {
+  border: 10px double red;
+}
+
 li a {
     display: block;
     color: white;

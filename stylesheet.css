@@ -45,8 +45,8 @@ li {
     float: left;
 }
 
-img {
-  border: 10px double red;
+.img {
+  border: 10px double #B03060;
 }
 
 li a {

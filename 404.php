@@ -59,12 +59,6 @@ $note \n
 $httpref ";
 
 
-$to = "error@yourdomain.com";
-
-$subject = "yourdomain Error Page";
-
-$from = "From: fake@yourdomain.com\r\n";
-
 
 mail($to, $subject, $message2, $from);
 
@@ -73,7 +67,7 @@ echo $message;
 
 ?>
 
-Visit our Home Page yourdomain.com
+Visit our Home Page cps7.tk/index
 
 
 </BODY></HTML>

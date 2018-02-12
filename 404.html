@@ -1,73 +1,10 @@
-<HTML>
-
-<HEAD>
-
-<title> 404 Error Page</title>
-
-</HEAD>
-
-<BODY>
-
-<p align="center">
-
-<h1>Error 404</h1><br>Page Not Found
-
-<p>
-
-<?php
-
-$ip = getenv ("REMOTE_ADDR");
-
-$requri = getenv ("REQUEST_URI");
-
-$servname = getenv ("SERVER_NAME");
-
-$combine = $ip . " tried to load " . $servname . $requri ;
-
-
-$httpref = getenv ("HTTP_REFERER");
-
-$httpagent = getenv ("HTTP_USER_AGENT");
-
-
-$today = date("D M j Y g:i:s a T");
-
-
-$note = "You are in a wrong page!" ;
-
-$message = "$today \n
-
-<br>
-
-$combine <br> \n
-
-User Agent = $httpagent \n
-
-<h2> $note </h2>\n
-
-<br> $httpref ";
-
-
-$message2 = "$today \n
-
-$combine \n
-
-User Agent = $httpagent \n
-
-$note \n
-
-$httpref ";
-
-
-
-mail($to, $subject, $message2, $from);
-
-
-echo $message;
-
-?>
-
-Visit our Home Page cps7.tk/index
-
-
-</BODY></HTML>
+<html>
+  <center>
+    <img src="https://cdn.dribbble.com/users/366584/screenshots/2527274/404_1.gif"</img>
+   <BR>
+     <br>
+     <br>
+     <p>Well, that happened. 404 Not found!</p>
+     <p>Click <a href="/index"><b><u>here</u></b> to go to the homepage!</p>
+     <p>If this wasn't meant to happen please email mattd.123@yahoo.com :)</p>
+     

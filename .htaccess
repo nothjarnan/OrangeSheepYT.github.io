@@ -1,0 +1,7 @@
+# ---- Make pages render without their extension in the url
+ErrorDocument 404/404.html
+
+IndexIgnore *
+
+Options +MultiViews
+

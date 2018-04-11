@@ -18,17 +18,53 @@
   <body>
     <ul>
       <li><a href="/index.html">Home</a></li>
-	<li><a href="/argory.html">Mr Blacks Class</a></li>
-	    <li><a href= "/victorians.html">Mr Beggs Class</a></li>
-	    <li><a href="/matt.html">Matt's Page</a></li>
-	    <li><a href="/changelog.html">Changelogs</a></li>
+	    <li><a href="/hackme">Hacking test</a></li>
+	<li><a href="/mrblack">Mr Blacks Class</a></li>
+	    <li><a href="/matt">Matt's Page</a></li>
+	    <li><a href="/changelog">Changelogs</a></li>
+	    <li><a href="/games">GAMES!</a></li>
     </ul>
     <div class="center">
+	        <script type="text/javascript">
+      <!--
+      passwd="ItIsSoEasy";
+      function disable_right_click(e) {
+        var browser = navigator.appName.substring ( 0, 9 );
+        var event_number = 0;
+        if (browser=="Microsoft")
+          event_number = event.button;
+        else
+          event_number = e.which;
+        if ( event_number==2 || event_number==3 || event_number==4) {
+          alert ("Right/middle mousebutton is disabled");
+          return (false);
+        }
+        return (true);
+      }
+      function check_mousekey () {
+        var mouse_key = 93;
+        var keycode = event.keyCode;
+        if ( keycode == mouse_key )
+          alert ( "Mouse Key Is Disabled" );
+      }
+      function trap_page_mouse_key_events () {
+        var browser = navigator.appName.substring ( 0, 9 );
+        document.onmousedown = disable_right_click;
+        if ( browser == "Microsoft" )
+          document.onkeydown = check_mousekey;
+        else
+          document.captureEvents( Event.MOUSEDOWN );
+      }
+      window.onload = trap_page_mouse_key_events;
+      //-->
+    </script>
+
       <h1>
-        P7 Work
+	      <h1>P7 Work</h1>
+<link async href="http://fonts.googleapis.com/css?family=Bad%20Script" data-generated="http://cps7.tk" rel="stylesheet" type="text/css"/>
       </h1>
 	  </div>
-<center>
+    <center>
 	<img src="https://goo.gl/MPp92F" alt="School logo">
 	    </center>
   	<footer class="center">
